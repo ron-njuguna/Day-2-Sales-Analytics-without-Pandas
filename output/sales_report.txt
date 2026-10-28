@@ -1,0 +1,57 @@
+=== Sales report: September 2026 ===
+Rows read          : 50
+Rows used          : 47
+Rows skipped       : 3   (S-3030: unusable unit price ('N/A'), S-3035: unusable quantity (''), S-3039: unusable unit price (''))
+
+Total revenue (KES): 1,317,210.00
+
+Revenue by product (KES)
+  HP 15 Laptop                  389,994.00
+  Hisense 43in Smart TV         272,993.00
+  Lenovo Tab M10                199,992.00
+  Tecno Spark 20                161,988.00
+  Infinix Hot 40                 63,996.00
+  Samsung Galaxy A15             56,997.00
+  JBL Go 3 Speaker               49,491.00
+  Anker Power Bank 20000         38,691.00
+  Xiaomi Redmi Buds              31,990.00
+  Oraimo FreePods                19,593.00
+  USB-C Charger 25W              19,487.00
+  Safaricom Neon Ray             11,998.00
+
+Revenue by store (KES)
+  Kisumu Mega Plaza             449,678.00
+  Nairobi CBD                   337,483.00
+  Westgate                      235,979.00
+  Mombasa City Mall             154,082.00
+  Nakuru Westside               139,988.00
+
+Revenue by payment method (KES)
+  M-Pesa                        738,568.00
+  Cash                          310,773.00
+  Card                          267,869.00
+
+Top 3 products
+  1. HP 15 Laptop - KES 389,994.00
+  2. Hisense 43in Smart TV - KES 272,993.00
+  3. Lenovo Tab M10 - KES 199,992.00
+
+High-value transactions (>= KES 50,000): 5
+  S-3013  2026-09-08  Westgate  Lenovo Tab M10  KES 99,996.00
+  S-3017  2026-09-10  Kisumu Mega Plaza  Hisense 43in Smart TV  KES 155,996.00
+  S-3022  2026-09-13  Nairobi CBD  HP 15 Laptop  KES 259,996.00
+  S-3036  2026-09-21  Nakuru Westside  Tecno Spark 20  KES 53,996.00
+  S-3048  2026-09-30  Kisumu Mega Plaza  HP 15 Laptop  KES 129,998.00
+  Per store: Kisumu Mega Plaza: 2, Mombasa City Mall: 0, Nairobi CBD: 1, Nakuru Westside: 1, Westgate: 1
+
+Transaction revenue statistics
+  mean   : 28,025.74
+  median : 10,998.00
+  min    : 1,499.00
+  max    : 259,996.00
+
+=== pandas verification ===
+Total revenue      : MATCH
+Revenue by product : MATCH
+Top 3              : MATCH
+Mean / median      : MATCH
