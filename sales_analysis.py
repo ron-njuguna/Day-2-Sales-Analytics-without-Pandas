@@ -31,8 +31,8 @@ def parse_number(value: str) -> float | None:
         return None
     if text in NUMBER_WORDS:
         return float(NUMBER_WORDS[text])
-    text = re.sub(r"^(kes|ksh|ksh\.|kshs)\s*", "", text)   # leading currency tag
-    text = re.sub(r"\s*(kes|ksh|kshs)$", "", text)          # trailing currency tag
+    text = re.sub(r"^(kes|ksh|ksh\.|kshs)\s*", "", text)   
+    text = re.sub(r"\s*(kes|ksh|kshs)$", "", text)          
     text = text.replace(",", "").strip()
     if not re.fullmatch(r"\d+(\.\d+)?", text):
         return None
